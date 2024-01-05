@@ -19,4 +19,8 @@ export class CardFormComponent {
   onSubmit() {
 
   }
+
+  onReset() {
+    this.cardForm.reset();
+  }
 }
