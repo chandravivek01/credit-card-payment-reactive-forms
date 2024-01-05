@@ -4,16 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardFormComponent } from './card-form/card-form.component';
+import { InputComponent } from './input/input.component';
+// import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardFormComponent
+    CardFormComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // NgxMaskDirective, 
+    // NgxMaskPipe
   ],
+  // providers: [provideEnvironmentNgxMask()],
   providers: [],
   bootstrap: [AppComponent]
 })
